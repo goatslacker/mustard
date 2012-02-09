@@ -1,0 +1,25 @@
+{
+  "author": "Josh Perez <josh@goatslacker.com> (http://www.goatslacker.com)",
+  "name": "mustard",
+  "description": "CLI templates",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/goatslacker/mustard.git"
+  },
+  "main": "./lib/mustard.js",
+  "engines": {
+    "node": "~0.6.9"
+  },
+  "scripts": {
+    "publish": "cake build",
+    "test": "vows --spec"
+  },
+  "dependencies": {
+    "hogan.js": "latest"
+  },
+  "devDependencies": {
+    "vows": "latest"
+  },
+  "optionalDependencies": {}
+}
