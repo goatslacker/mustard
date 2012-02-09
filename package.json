@@ -2,7 +2,7 @@
   "author": "Josh Perez <josh@goatslacker.com> (http://www.goatslacker.com)",
   "name": "mustard",
   "description": "CLI templates",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
     "url": "git://github.com/goatslacker/mustard.git"
@@ -12,7 +12,7 @@
     "node": "~0.6.9"
   },
   "scripts": {
-    "publish": "cake build",
+    "prepublish": "cake build",
     "test": "vows --spec"
   },
   "dependencies": {
