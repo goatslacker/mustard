@@ -2,7 +2,7 @@
   "author": "Josh Perez <josh@goatslacker.com> (http://www.goatslacker.com)",
   "name": "mustard",
   "description": "CLI templates",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "git://github.com/goatslacker/mustard.git"
@@ -18,5 +18,8 @@
   "devDependencies": {
     "vows": "latest"
   },
-  "optionalDependencies": {}
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
 }
