@@ -8,9 +8,6 @@
     "url": "git://github.com/goatslacker/mustard.git"
   },
   "main": "./lib/mustard.js",
-  "engines": {
-    "node": "~0.6.9"
-  },
   "scripts": {
     "prepublish": "cake build",
     "test": "vows --spec"
