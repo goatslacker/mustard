@@ -1,4 +1,5 @@
 fs = require "fs"
+path = require "path"
 hogan = require "hogan.js"
 { setColor, setWidth } = require "./styles"
 
@@ -54,7 +55,7 @@ applyStyles = (template, data, styles) ->
 # if you haven't already passed in the template with __dirname
 addDirname = (template) ->
   if template.substring(0, 1) != "/" and mustard.templates
-    template = mustard.templates + template
+    template = path.join mustard.templates, template
 
   template
 
