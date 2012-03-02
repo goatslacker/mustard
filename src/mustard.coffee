@@ -3,6 +3,18 @@ path = require "path"
 hogan = require "hogan.js"
 { setColor, setWidth } = require "./styles"
 
+
+MustardString = (str) ->
+  ms =
+    toString: -> str
+    valueOf: -> str
+
+  un = str.replace /\u001b\[[0-9][0-9]m/g, ''
+  Object.defineProperty ms, 'length', value: un.length
+
+  ms
+
+
 # if a property exists in an object.
 iterateObject = (obj, fn) ->
   Object.keys(obj).forEach((key) ->
@@ -94,7 +106,7 @@ mustard = (template, data, styles) ->
   content = applyStyles template, data, styles
   content = trimLines content
 
-  content
+  MustardString content
 
 
 # mustard.templates can be set to the prefix to all future templates
